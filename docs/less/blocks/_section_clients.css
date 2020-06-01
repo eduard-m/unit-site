@@ -1,0 +1,202 @@
+.section__clients {
+  padding: 75px 0 165px;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .section__clients {
+    padding: 75px 0 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .section__clients {
+    padding-top: 110px;
+    padding-bottom: 95px;
+    background-image: url(../img/bg-clients.svg);
+    background-repeat: no-repeat;
+    background-position: center 156px;
+    background-size: auto;
+  }
+}
+.section__clients-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+@media (min-width: 768px) {
+  .section__clients-title {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .section__clients-title {
+    margin-bottom: 72px;
+  }
+}
+.section__clients-title .section__title {
+  font-size: 14px;
+}
+.section__clients-carousel {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.section__clients-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .section__clients-header {
+    margin-bottom: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .section__clients-header {
+    margin-bottom: 83px;
+  }
+}
+.clients__reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 9px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .clients__reviews {
+    padding: 0;
+    max-width: 467px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients__reviews {
+    max-width: 750px;
+  }
+}
+.reviews__text {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #808080;
+  line-height: 2;
+  text-align: center;
+}
+.reviews__text p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .reviews__text {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 2.13;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__text {
+    font-size: 18px;
+    line-height: 2.2;
+    margin-bottom: 55px;
+  }
+}
+.reviews__user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .reviews__user {
+    flex-direction: row;
+  }
+}
+.reviews__user-img {
+  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.reviews__user-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (min-width: 1200px) {
+  .reviews__user-img {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+.reviews__user-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #808080;
+  line-height: 1.3;
+}
+.clients-carousel.owl-carousel .owl-nav button.owl-prev {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -20px;
+  transform: translate(-100%, 100%);
+  background-image: url("../img/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  outline: none;
+  transition: all 0.1s ease-in;
+}
+.clients-carousel.owl-carousel .owl-nav button.owl-prev:hover {
+  opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .clients-carousel.owl-carousel .owl-nav button.owl-prev {
+    top: 0;
+    bottom: auto;
+    margin-left: 0;
+    left: 0;
+    transform: unset;
+  }
+}
+@media (min-width: 1200px) {
+  .clients-carousel.owl-carousel .owl-nav button.owl-prev {
+    top: 20px;
+    left: -40px;
+    transform: translateX(-100%);
+  }
+}
+.clients-carousel.owl-carousel .owl-nav button.owl-next {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: 20px;
+  transform: translateY(100%);
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  outline: none;
+  transition: all 0.1s ease-in;
+}
+.clients-carousel.owl-carousel .owl-nav button.owl-next:hover {
+  opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .clients-carousel.owl-carousel .owl-nav button.owl-next {
+    top: 0;
+    right: 0;
+    left: auto;
+    transform: unset;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .clients-carousel.owl-carousel .owl-nav button.owl-next {
+    top: 20px;
+    right: -40px;
+    transform: translateX(100%);
+  }
+}

@@ -1,0 +1,81 @@
+.call__action {
+  position: relative;
+  padding: 75px 0 75px;
+  background-color: #0a824e;
+  background-image: url(../img/bg-cta.jpg);
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    padding: 75px 0 80px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 83px;
+    padding-bottom: 90px;
+  }
+}
+
+.call__action::before {
+  content: "";
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 130, 78, 0.7);
+}
+
+.action__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.action__article {
+  margin-bottom: 35px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.364;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 44px;
+  }
+}
+
+.action__article-span {
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.action-btn {
+  height: 60px;
+  padding: 0 45px;
+  border-radius: 30px;
+  border: none;
+
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  font-family: "Montserrat";
+  color: rgb(43, 178, 121);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.143;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+  &:hover {
+    background-color: #50e3a4;
+    color: #fff;
+  }
+}

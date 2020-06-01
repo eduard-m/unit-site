@@ -1,0 +1,111 @@
+.section__focus {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.section__focus::before {
+  content: "";
+  display: block;
+  height: 77px;
+  width: 77px;
+  position: absolute;
+  z-index: 1;
+  background-color: #a4eecb;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+@media (min-width: 768px) {
+  .section__focus {
+    padding-top: 59px;
+    padding-bottom: 0;
+  }
+  .section__focus::before {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .section__focus {
+    padding-top: 90px;
+  }
+  .section__focus::before {
+    content: "";
+    display: block;
+    height: 133px;
+    width: 133px;
+    position: absolute;
+    z-index: 1;
+    background-image: url(../img/triangle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+@media (min-width: 768px) {
+  .section__focus__content {
+    padding-left: 30px;
+    padding-bottom: 110px;
+  }
+}
+@media (min-width: 1200px) {
+  .section__focus__content {
+    padding-bottom: 112px;
+    max-width: 100%;
+    width: 570px;
+    padding-left: 170px;
+  }
+}
+.section__focus__row {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .section__focus__row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.section__focus_img-wrap {
+  max-width: 470px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .section__focus_img-wrap {
+    max-width: unset;
+    width: 287px;
+    height: 505px;
+  }
+}
+@media (min-width: 1200px) {
+  .section__focus_img-wrap {
+    width: 470px;
+    height: 731px;
+  }
+}
+.section__focus_img {
+  position: static;
+  max-width: 100%;
+  transform: translateX(-4%);
+}
+@media (min-width: 768px) {
+  .section__focus_img {
+    transform: translateX(0%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: unset;
+    height: 520px;
+  }
+}
+@media (min-width: 1200px) {
+  .section__focus_img {
+    height: auto;
+  }
+}

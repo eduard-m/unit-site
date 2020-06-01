@@ -1,0 +1,15 @@
+.section__priorities {
+  background-color: #fff;
+  padding-top: 90px;
+  padding-bottom: 135px;
+  overflow: hidden;
+  position: relative;
+}
+.section__priorities__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__priorities__content {
+  width: 470px;
+}
